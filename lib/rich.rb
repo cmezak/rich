@@ -45,14 +45,8 @@ module Rich
   mattr_accessor :allowed_document_types
   @@allowed_document_types = :all
   
-  mattr_accessor :storage
-  @@allowed_document_types = :storage
-
-  mattr_accessor :s3_credentials
-  @@allowed_document_types = :s3_credentials
-  
-  mattr_accessor :path
-  @@allowed_document_types = :path
+  mattr_accessor :paperclip_options
+  @@allowed_document_types = :paperclip_options
 
   
   # Configuration defaults (these map directly to ckeditor settings)
