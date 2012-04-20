@@ -46,7 +46,7 @@ module Rich
   @@allowed_document_types = :all
   
   mattr_accessor :paperclip_options
-  @@allowed_document_types = {}
+  @@paperclip_options = {}
 
   
   # Configuration defaults (these map directly to ckeditor settings)
