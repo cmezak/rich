@@ -10,9 +10,9 @@ module Rich
     
     paginates_per 34
     
-    has_attached_file :rich_file, Rich.s3_options.merge { :styles => Proc.new {|a| a.instance.set_styles },
-                                                          :convert_options => Proc.new { |a| Rich.convert_options[a] }
-                                                          }
+    has_attached_file :rich_file, Rich.paperclip_options.merge {  :styles => Proc.new {|a| a.instance.set_styles },
+                                                                  :convert_options => Proc.new { |a| Rich.convert_options[a] }
+                                                                }
                       
     
     validates_attachment_presence :rich_file
